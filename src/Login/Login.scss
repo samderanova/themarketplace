@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+
+    font-size: 18px;
+    label::after {
+        color: red;
+        content: ' *';
+    }
+    @media only screen and (min-width: 500px) {
+        .border {
+            padding: 100px;
+        }
+        input {
+            width: 20em;
+            height: 1.75em;
+        }
+    }
+    .border {
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 30px;
+    }
+    input {
+        display: block;
+        font-family: 'Segoe UI', 'Roboto', sans-serif;
+        font-size: 1em;
+        margin: 10px 0;
+        padding: 1px 3px;
+    }
+    .submit {
+        text-align: center;
+        #login, #createAccount {
+            padding: 10px 30px;
+            margin: 10px 0;
+        }
+        #google-login, #create-google-login {
+            color: white;
+            background-color: #4285F4;
+            border: 1px solid black;
+            border-radius: 3px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600;
+            padding: 10px 20px;
+        }
+    }
+}
+
+
+.inputField {
+    padding: 10px 0;
+    @media only screen and (min-width: 500px) {
+        a:nth-child(1) {
+            float: left;
+        }
+        a:nth-child(2) {
+            float: right;
+        }
+    }
+}

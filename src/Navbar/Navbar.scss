@@ -1,0 +1,27 @@
+nav {
+    background-color: lightgrey;
+    padding: 20px;
+    text-align: center;
+    a {
+        color: black; 
+    }
+    .menu {
+        float: left;
+    }
+    .home {
+        font-size: 30px;
+    }
+    .login {
+        float: right;
+    }
+    .menu, .login {
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-height: 700px) {
+    nav .home {
+        font-size: 20px;
+    }
+}
+    

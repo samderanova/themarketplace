@@ -1,0 +1,43 @@
+@keyframes slideIn {
+    from { left: -100%; }
+    to { left: 0; }
+}
+
+@keyframes slideOut {
+    from {left: 0; }
+    to {left: -100%; }
+}
+
+#sidebar {
+    animation-duration: 0.5s;
+    border-right: 1px solid gray;
+    background-color: white;
+    color: black;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    header {
+        h1, i {
+            display: inline;
+            padding: 0 20px;
+            vertical-align: middle;
+        }
+    }
+    .category {
+        padding-top: 10px;
+        text-align: left;
+        i, p {
+            display: inline;
+            vertical-align: middle;
+        }
+        ul {
+            padding-left: 40px;
+        }
+        li {
+            list-style: none;
+            padding: 5px 0;
+        }
+    }
+}
